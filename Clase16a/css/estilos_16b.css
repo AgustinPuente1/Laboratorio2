@@ -1,0 +1,19 @@
+body {
+    /* inicialización de un contador de capítulos */
+    counter-reset: contador-capitulos;
+}
+
+h1::after{
+    content: counter(contador-capitulos);
+    counter-increment: contador-capitulos;
+}
+
+h1 {
+    /* inicialización de un contador de secciones luego de pasar por un h1 */
+    counter-reset: contador-secciones;
+}
+
+h2::after{
+    content: counter(contador-capitulos) "." counter(contador-secciones);
+    counter-increment: contador-secciones;
+}

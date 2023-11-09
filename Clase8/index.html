@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="es-AR">
+    <head>
+        <meta charset="utf-8">
+        <title> Clase 8 </title>
+
+    </head>
+
+    <body>
+        <form action="servidor.html" method="post">
+            <label for="in color"> Elija un color: </label>
+            <input type="color" id="in-color" name="color" value="#ff0000">
+
+            <label for="in-fecha"> Ingrese una fecha (date): </label>
+            <input type="date" name="fecha-date" id="in-fecha">
+
+            <label for="in-fecha-datetime-local"> Ingrese una fecha (datetime-local): </label>
+            <input type="datetime-local" name="fecha-datetime-local" id="in-fecha-datetime-local">
+
+            <label for="in-file"> Seleccione un archivo: </label>
+            <input  type="file" id="in-file" name="archivo">
+
+            <label for="ta-mensaje"> Mensaje: </label>
+            <textarea id="ta-mensaje" name="message" rows="10" cols="30"> Ingrese su mensaje: </textarea>
+
+            <label for="sel-pais"> Seleccione un pais: </label>
+            <select id="sel-pais" name="country" multiple size="9">
+                <optgroup label="America">
+                    <option selected> Argentina </option>
+                    <option> Brasil </option>
+                    <option> Uruguay </option>
+                </optgroup>
+
+                <optgroup label="Europa">
+                    <option> Alemania </option>
+                    <option> Francia </option>
+                    <option> Reino Unido </option>
+                    <option> Italia </option>
+                </optgroup>
+            </select>
+
+            <label> Seleccione la provincia/estado: </label>
+            <select disabled>
+                <option>  </option>
+            </select>
+
+            <label for="sel-color"> Seleccione un color: </label>
+            <select id="sel-color" name="selected-color">
+                <option value="rgb(150,0,0)"> Rojo </option>
+                <option value="rgb(0,150,0)"> Verde </option>
+                <option value="rgb(0,0,150)"> Azul </option>
+            </select>
+
+            <label for="in-texto"> Indique su eleccion: </label>
+            <input type="text" id="in-texto" list="lista-lenguajes">
+
+            <datalist id="lista-lenguajes">
+                <option> HTML </option>
+                <option> CSS </option>
+                <option> JavaScript </option>
+            </datalist>
+
+            <label for="in-color-lista"> Seleccione un color: </label>
+            <input type="color" id="in-color-lista" list="lista-colores">
+
+            <datalist id="lista-colores">
+                <option value="#80F0A0"></option>
+                <option value="#ff0000"></option>
+                <option value="#543487"></option>
+                <option value="#AD4235"></option>
+            </datalist>
+
+            <input type="button" value="Borrar datos">
+
+            <button type="button">
+                    <span class="material-symbol.outlined">
+                        search 
+                    </span> Buscar
+            </button>
+
+            <progress max="100" value="20"> 20% </progress>
+
+            <meter min="0" max="100" value="15" low="33" high="66" optimum="25"> 15 </meter>
+            <meter min="0" max="100" value="40" low="33" high="66" optimum="25"> 15 </meter>
+            <meter min="0" max="100" value="95" low="33" high="66" optimum="25"> 15 </meter>
+
+            <button type="submit" > Enviar </button>
+            
+        </form>
+    </body>
+
+
+
+</html>

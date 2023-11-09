@@ -1,0 +1,50 @@
+/* selecciona los id="titulo" */
+#titulo {
+    color:slateblue;
+}
+
+/* selecciona las class="borde" */
+/* border: tamaño del borde - color - estilo */
+.borde {
+    border: 5px black solid;
+    /*
+    estilos: 
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+}
+
+/* selecciona los p con class="texto" */
+p.texto {
+    color:tomato;
+}
+
+/* selecciona los p con class="especial" */
+p.especial {
+    color: green;
+}
+
+/* selecciona los <p> dentro de <div> */
+div p{
+    color:aquamarine;
+}
+
+/* selecciona los h2 y h3 dentro de div */
+div h2, div h3{
+    color:brown;
+}
+
+/* * hace que se seleccione todo el html */
+/* pero no reemplaza los selectores,sino que aplica a los que no tienen ese selector */
+*{
+    font-size: 24px;
+    color:black
+}

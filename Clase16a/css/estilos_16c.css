@@ -1,0 +1,44 @@
+:root {
+    --fondo-oscuro: blue;
+    --letra-clara: white;
+
+    /* Paleta de colores */
+    --azur-oscuro: blue;
+    --blanco-suave: white;
+}
+
+body {
+    background-color: aqua;
+}
+
+main {
+    background-color: var(--fondo-oscuro);
+    height: 500px;
+}
+
+footer {
+    background-color: var(--blanco-suave);
+    height: 100px;
+}
+
+footer>p{
+    color: var(--azur-oscuro);
+}
+
+h1 {
+    color: var(--letra-clara);
+}
+
+h2 {
+    color: var(--letra-clara);
+}
+
+p{
+    color: var(--letra-clara);
+}
+
+/* Uso de atributos de datos */
+
+article[data-antiguedad]::after{
+    content: "Publicado hace " attr(data-antiguedad) " dias";
+}

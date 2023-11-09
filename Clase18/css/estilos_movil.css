@@ -1,0 +1,151 @@
+
+body{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header principal */
+.header-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    order: 1;
+}
+.header-principal>h1{
+    order: 2;
+}
+.logo{
+    order: 1;
+}
+
+/* menu principal */
+.menu-principal{
+    order: 3;
+}
+.menu-principal>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-principal>ul>li{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    border: 1px solid var(--gris-oscuro);
+}
+.menu-principal>ul>li:hover{
+    background-color: var(--naranja);;
+    text-transform: uppercase;
+}
+
+/* usuario */
+.usuario{
+    order: 2;
+}
+.usuario>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.usuario>ul>li{
+    line-height: 30px;
+    height: 30px;
+}
+
+/* main */
+main{
+    order: 4;
+}
+
+
+/* destacados */
+.destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px;
+}
+.destacados>article{
+    height: 200px;
+}
+.destacados>article>button{
+    width: 100%;
+    height: 20px;
+}
+.destacados>article:nth-of-type(2n){
+    align-self: flex-end;
+}
+.destacados>article:nth-of-type(2n-1){
+    align-self: flex-start;
+}
+/* ofertas */
+.ofertas{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-evenly;
+}
+.ofertas>article{
+    box-shadow: 2px 2px 2px var(--naranja), -2px -2px 2px var(--naranja);
+    width: 22%;
+    position: relative;
+}
+.ofertas>article>img{
+    width: 70px;
+    height: 70px;
+}
+
+
+/* populares */
+.populares{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.populares>article{
+    width: 30%;
+}
+
+/* publicidad */
+.publicidad{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    order: 5;
+}
+.publicidad>img{
+    width: 100%;
+    height: 50px;
+}
+
+/* footer principal */
+.footer-principal{
+    display: flex;
+    flex-direction: column;
+    order: 6;
+}
+.footer-principal>section{
+    display: flex;
+    justify-content: space-around;    
+    padding: 20px;
+}
+.contacto{
+    flex-wrap: wrap;
+}
+.contacto>h2{
+    width: 100%;
+    text-align: center;
+}
+.pagos{
+    flex-wrap: wrap;
+}
+.pagos>h2{
+    width: 100%;
+    text-align: center;
+}
+.pagos>p{
+    width: 30%;
+}

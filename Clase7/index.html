@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es-AR">
+    <head>
+        <meta charset="utf-8">
+        <title> Clase 7 - Formularios </title>
+    </head>
+
+    <body>
+        <!-- method="get" para info no sensible, "post"  para sensible -->
+        <!-- name="" se usa para mandar al sistema, id="" para manejar -->
+        <form action="servidor.html" method="post">
+            <label for="in-email"> Email: </label>
+            <input type="email" name="email" id="in-email">
+
+            <label for="in-nombre-usuario"> Nombre: </label>
+            <input 
+                type="text" 
+                name="username" 
+                id="in-nombre-usuario" 
+                placeholder="sas"
+                required
+            >
+
+            <label for="in-contrasenia"> Contraseña: </label> 
+            <input 
+                type="password" 
+                name="userpass" 
+                id="in-contrasenia" 
+                required
+                minlength="4"
+                maxlength="10"
+            >
+
+            <label for="in-notificaciones"> ¿Desea recibir notificacion? </label>
+            <input type="checkbox" name="notifications" id="in-notificaciones">
+
+            <fieldset>
+                <legend> Cantidad de coutas </legend>
+                <label for="in-3c"> 3 </label>
+                <input type="radio" value="3" name="coutas" id="in-3c"> 
+
+                <label for="in-6c"> 6 </label>
+                <input type="radio" value="6" name="coutas" id="in-6c"> 
+
+                <label for="in-12c"> 12 </label>
+                <input type="radio" value="12" name="coutas" id="in-12c">
+            </fieldset> 
+
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Borrar </button>
+            <button onclick="alert('Ejemplo de otro boton')"> Cargar Comprobante </button>
+        </form>
+    </body>
+
+</html>

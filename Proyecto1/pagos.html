@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="es-AR">
+    <head>
+        <meta charset="utf-8">
+        <title> Pagos </title>
+    </head>
+
+    <body>
+        <!-- encabezado -->
+        <header>  
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo_pagina">
+            </a>
+            <h1> NOMBRE DE LA PAGINA-EMPRESA </h1>
+        </header>
+
+        <hr>
+
+        <!-- main -->
+        <main>
+            <form action="compra_realizada.html" method="post">
+                <!-- tipo de tarjeta -->
+                <fieldset>
+                    <legend> Tipo de tarjeta </legend>
+
+                    <label for="in-card-visa"> <img src="img/visa.png" alt="logo_visa" width="40"> </label>
+                    <input id="in-card-visa" type="radio" value="visa" name="tipo_tarjeta">
+
+                    <label for="in-card-master"> <img src="img/mastercard.png" alt="logo_mastercard" width="40"> </label>
+                    <input id="in-card-master" type="radio" value="master" name="tipo_tarjeta">
+                </fieldset>
+                
+                <!-- numero de tarjeta -->
+                <label for="in-number-card"> Numero de Tarjeta: </label>
+                <input id="in-number-card" type="number" name="numero_tarjeta" placeholder="0000-0000-0000-0000" required>
+                
+                <!-- Nombre y apellido del titular -->
+                <label for="in-nombre-tarjeta"> Nombre y Apellido: </label>
+                <input id="in-nombre-tarjeta" type="text" name="nombre_tarjeta" required>
+
+                <!-- fecha de vencimiento -->
+                <fieldset>
+                    <legend> Vencimiento </legend>
+
+                    <label for="sel-month"> Mes: </label>
+                    <select id="sel-month" name="mes" required>  
+                        <option> 01 </option>
+                        <option> 02 </option>
+                        <option> 03 </option>
+                        <option> 04 </option>
+                        <option> 05 </option>
+                        <option> 06 </option>
+                        <option> 07 </option>
+                        <option> 08 </option>
+                        <option> 09 </option>
+                        <option> 10 </option>
+                        <option> 11 </option>
+                        <option> 12 </option>
+                    </select>
+
+                    <label for="sel-year"> Año: </label>
+                    <select id="sel-year" name="año" required>
+                        <option> 2024 </option>
+                        <option> 2025 </option>
+                        <option> 2026 </option>
+                        <option> 2027 </option>
+                        <option> 2028 </option>
+                        <option> 2029 </option>
+                        <option> 2030 </option>
+                        <option> 2031 </option>
+                        <option> 2032 </option>
+                        <option> 2033 </option>
+                        <option> 2034 </option>
+                        <option> 2035 </option>
+                        <option> 2036 </option>
+                    </select>
+                </fieldset>
+
+                <!-- código de seguridad -->
+                <label for="in-security-code"> Codigo de seguridad: </label>
+                <input id="in-security-code" type="number" name="codigo-seguridad" min="001" max="999" required>
+
+                <!-- calle -->
+                <label for="in-calle"> Calle: </label>
+                <input id="in-calle" type="text" name="calle_nombre">
+
+                <label for="in-calle-number"> Numero de calle: </label>
+                <input id="in-calle-number" type="number" min="1">
+
+                <button type="submit"> Comprar </button>
+            </form>
+    
+    
+
+        </main>
+
+        <hr>
+        
+        <!-- pie de pagina -->
+        <footer style="background-color: aqua;border: 2px solid black;">
+            <p> Desarrolladores: Colantonio Julián y Puente Agustín </p>
+        </footer>
+    </body>
+
+</html>

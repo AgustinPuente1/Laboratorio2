@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es-AR">
+    <head>
+        <meta charset="utf-8">
+        <title> Clase 4 </title>      
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">            
+    </head>
+
+
+    <body>
+        <img 
+            src="img/formas.png"
+            alt="Circulo, rectangulo y un poligono en fondo gris"
+            usemap="#map1"
+        >
+
+        <map name="map1">
+            <area 
+                shape="rect" 
+                coords="17,17,220,70" 
+                href="rectangulo.html"
+                title="Rectangulo"
+                target="_blank"
+            >
+            <area 
+                shape="circle" 
+                coords="350,100,43" 
+                href="circulo.html"
+                title="Circulo"
+                target="_blank"
+            >
+            <area 
+                shape="poly" 
+                coords="1,167,161,168,231,238,500,238,500,300,0,300,0,168" 
+                href="poligono.html"
+                title="Poligono"
+                target="_blank"
+            >
+        </map>
+
+        <picture>
+            <source media="(min-width:900px)" srcset="img/cuadrado.png">
+            <source media="(min-width:700px)" srcset="img/estrella.png">
+            <img src="img/circulo.png">
+        </picture>
+        
+        <figure>
+            <img src="img/hexagono.png">
+            <figcaption> Figura de un hexagono jaja </figcaption>
+        </figure>
+
+        <h1> TITULO PRINCIPAL </h1>
+            
+
+    </body>
+
+</html>
