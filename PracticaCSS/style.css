@@ -6,7 +6,7 @@
 /* selecciona las class="borde" */
 /* border: tamaño del borde - color - estilo */
 .borde {
-    border: 5px black solid;
+    /* border: 5px red outset; */
     /*
     estilos: 
     dotted
@@ -20,6 +20,11 @@
     none
     hidden
     */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5pt;
+
 }
 
 /* selecciona los p con class="texto" */
@@ -47,4 +52,139 @@ div h2, div h3{
 *{
     font-size: 24px;
     color:black
+}
+
+#fondo{
+    /* el cuarto elemento es la transparencia */
+    background-color: rgba(100, 200, 50, 0.6);
+    /* opacidad del elemento */
+    /* opacity: 0.4; */
+    height: 300px;
+    background: red url("img/messi.png") no-repeat center top;
+    background-size: cover;
+}
+
+.margen{
+    background-color: chocolate;
+    /* margen fuera del elemento */
+    margin: 25px;
+    /* margen dentro del elemento */
+    padding: 30px;
+    /* borde entre el margin y padding*/
+    border: solid 5px black;
+
+    /* contenido del elemento */
+    height: 100px; /* alto */
+    width: 50px; /* ancho */
+    overflow: scroll;
+    outline: 4px solid red; /* entre el border y el padding*/
+
+}
+
+p.text{
+    text-align: center;
+    text-decoration:line-through;
+    text-shadow: 2px 2px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* :link es para cuando el elemento tiene un link */
+/* :visited es para cuando el elemento tiene un link visitado */
+/* :hover es para cuando pasas el mouse para encima de un elemento */
+/* :active es para cuando mantenes click en el elemento */
+
+a:link{
+    color: green;
+}
+
+a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: red;
+}
+
+ul{
+    background-color: cyan;
+    list-style: armenian;
+    /* padding: 0; */
+    list-style-position: outside;
+}
+
+table{
+    width: 110%;
+    border-collapse: collapse; /* hace que las zeldas de la tabla queden pegadas*/
+}
+
+th, td{
+    border: solid 3px black;
+}
+
+th{
+    background-color: red;
+}
+
+tr:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+span{
+    /* hace que el span use todo el ancho */
+    display: block;
+
+    /* hace que no se vea */
+    /* display: none; */
+    /* visibility: hidden; */
+
+    max-width: 300px;
+    background-color: aqua;
+}
+
+.inline{
+    /* hace que los elementos no ocupen todo el ancho */
+    display: inline;
+}
+
+#position{
+    /* deja anclado en su posicion y se sigue viendo aunque bajes */
+    /* position: fixed; */
+
+    position: relative;
+
+    /* corre el elemento  */
+    left: 20px;
+    top: 2px; 
+}
+
+.left{
+    float: left;
+    width: 100px;
+}
+
+.right{
+    float: right;
+    width: 100px;
+}
+
+.container{
+    height: 200px;
+}
+
+.inline-block{
+    /* inline-block se usa para menus fijos */
+    display: inline-block;
+    background-color: red;
+}
+
+.center{
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
 }
